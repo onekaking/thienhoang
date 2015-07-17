@@ -1,0 +1,25 @@
+{
+    "name": "thienhoang",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onekaking/thienhoang.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/onekaking/thienhoang/issues"
+    },
+    "homepage": "https://github.com/onekaking/thienhoang",
+    "dependencies": {
+        "express": "~4.9.x"
+    },
+    "engines": {
+        "node": "0.12.2"
+    }
+}
