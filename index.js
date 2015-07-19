@@ -155,12 +155,12 @@
 
 var express = require('express');
 var fs = require('fs');
-var app =  express.createServer();
+var app =  express();
 
 app.set('port', (process.env.PORT || 5000));
 
 // Initialize main server
-app.use(express.bodyParser());
+// app.use(express.bodyParser());
 
 app.use(express.static(__dirname + '/public'));
 
