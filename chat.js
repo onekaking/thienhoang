@@ -38,10 +38,11 @@ server.on('connection', function(client){
     console.log(e.stack, e.message);
   });
   client.on('stream', function(stream, meta){
+    console.log('stream');
     if(meta.type == 'write') {
-      rooms[meta.room] = stream;
+        rooms[meta.room] = stream;
     } else if (meta.type == 'read' && rooms[meta.room]) {
-      rooms[meta.room].pipe(stream);
+        rooms[meta.room].pipe(stream);
     }
  });
 });
