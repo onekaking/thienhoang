@@ -38,7 +38,7 @@ server.on('connection', function(client){
     console.log(e.stack, e.message);
   });
   client.on('stream', function(stream, meta){
-    console.log('stream');
+    console.log('test stream');
     if(meta.type == 'write') {
         rooms[meta.room] = stream;
     } else if (meta.type == 'read' && rooms[meta.room]) {
