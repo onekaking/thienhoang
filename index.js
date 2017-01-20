@@ -180,7 +180,9 @@ app.get('/broadcast/:room', function(req, res){
   res.render('broadcast', {room: req.params.room});
 });
 
-app.listen(app.get('port'));
+app.listen(app.get('port'), function () {
+  console.log('Example app listening on port ' + app.get('port') + '!')
+});
 
 var BinaryServer = require('binaryjs').BinaryServer;
 var rooms = {};
